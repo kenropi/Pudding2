@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - PuddingFest</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">PuddingFest</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index2.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index3.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Event Page -->
+  <section id="events">
+    <div class="container">
+      <h2>Event Schedule</h2>
+      <!-- List of events -->
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Indonesia Tech Expo</h3>
+          <p class="text-left">Explore the forefront of Indonesia's tech scene at the Indonesia Tech Expo, where leading companies unveil their latest innovations. From AI to sustainability tech, immerse yourself in live demos and insightful discussions.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>TechCon Indonesia</h3>
+          <p class="text-left">Join tech enthusiasts and industry leaders at TechCon Indonesia, where top companies showcase their newest gadgets and digital solutions. Engage with experts and explore the future of technology across diverse sectors.</p>
+        </div>
+      </div>
+      
+      <!-- Image Carousel -->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="image1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="image2.jpg" alt="Second slide">
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Timeline -->
+<div class="timeline">
+    <h3>PuddingFest Timeline</h3>
+    <ul>
+      <li>Indonesia Tech Expo - Saturday, June 15th, 12.00-16.00</li>
+      <li>TechCon Indonesia - Sunday, July 20th, 17.00-20.00</li>
+      <!-- Add more events and dates -->
+    </ul>
+  </div>
+  
+<!-- Registration Form -->
+<div id="registration">
+    <h3 class="text-left">Register for PuddingFest</h3>
+    <form id="registrationForm">
+      <div class="form-group">
+        <input type="text" class="form-control" id="name" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+      </div>
+      <div class="form-group">
+        <select class="form-control" id="eventsToAttend">
+          <option value="" selected disabled>Select Event</option>
+          <option value="Event 1">Indonesia Tech Expo</option>
+          <option value="Event 2">TechCon Indonesia</option>
+          <!-- Add more events -->
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <div id="errorMessages"></div>
+  </div>
+  </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
